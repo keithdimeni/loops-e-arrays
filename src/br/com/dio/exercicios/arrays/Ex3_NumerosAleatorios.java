@@ -17,24 +17,22 @@ public class Ex3_NumerosAleatorios {
             numerosAleatorios[i] = numero;
         }
 
-        System.out.print("Numeros Aleatorios: ");
-        for (int numero : numerosAleatorios) {
+        System.out.print("\nNumeros aleatorios: ");
+        for( int numero : numerosAleatorios) {
             System.out.print(numero + " ");
         }
 
         System.out.print("\nAntecessor dos Numeros Aleatorios: ");
-        for (int numero : numerosAleatorios) {
+        for( int numero : numerosAleatorios) {
             System.out.print((numero-1) + " ");
         }
 
         System.out.print("\nSucessores dos Numeros Aleatorios: ");
-        for (int numero : numerosAleatorios) {
+        for( int numero : numerosAleatorios) {
             System.out.print((numero+1) + " ");
         }
 
 
 
-
     }
-
 }

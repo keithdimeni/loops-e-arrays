@@ -12,20 +12,34 @@ public class Ex4_ArrayMultidimensional {
         int[][] M = new int[4][4];
 
         for(int i = 0; i < M.length; i++) {
-            for( int j = 0; j < M[i].length; j++) {
+            for(int j = 0; j < M[i].length; j++) {
                 M[i][j] = random.nextInt(9);
             }
         }
 
         System.out.println("Matriz: ");
-        for (int[] linha : M  ) {
-            for (int coluna : linha ) {
+        for (int[] linha  : M) {
+            for (int coluna : linha) {
                 System.out.print(coluna + " ");
             }
             System.out.println();
         }
 
+        int num = 5, count = 1;
+        while(count <= 3) {
+            ++count;
+            num += count;
+        }
+        System.out.println(num);
+
+//        int i, num = 5;
+//        for (i = 0; i < 3; i++) {
+//            num += i;
+//            System.out.print(i);
+//        }
+
+        int[][] numeros = {{4, 9, 8, 5}, {3, 0, 1, 5}, {1, 2, 7, 4}};
+        System.out.print(numeros[2][2]);
+
     }
-
-
 }
